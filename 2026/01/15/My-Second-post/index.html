@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>Wireless Lightbox Controller | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content=".image-container {     display: flex; &#x2F;* 使用flex布局使子元素并排 *&#x2F;     gap: 20px; &#x2F;* 两张图片之间的间距 *&#x2F;     margin: 20px 0; &#x2F;* 上下外边距 *&#x2F;   }   .image-container img {     width: 400px; &#x2F;* 保持图片宽度 *&#x2F;     height: 300">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Wireless Lightbox Controller">
+<meta property="og:url" content="http://example.com/2026/01/15/My-Second-post/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content=".image-container {     display: flex; &#x2F;* 使用flex布局使子元素并排 *&#x2F;     gap: 20px; &#x2F;* 两张图片之间的间距 *&#x2F;     margin: 20px 0; &#x2F;* 上下外边距 *&#x2F;   }   .image-container img {     width: 400px; &#x2F;* 保持图片宽度 *&#x2F;     height: 300">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://example.com/images/2/image.png">
+<meta property="og:image" content="http://example.com/images/2/image-1.png">
+<meta property="og:image" content="http://example.com/images/2/image-4.png">
+<meta property="og:image" content="http://example.com/images/2/image-3.png">
+<meta property="og:image" content="http://example.com/images/2/image-2.png">
+<meta property="article:published_time" content="2026-01-15T01:20:15.000Z">
+<meta property="article:modified_time" content="2026-01-15T01:53:47.879Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/images/2/image.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 8.0.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-My-Second-post" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2026/01/15/My-Second-post/" class="article-date">
+  <time class="dt-published" datetime="2026-01-15T01:20:15.000Z" itemprop="datePublished">2026-01-15</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      Wireless Lightbox Controller
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <style>
+  .image-container {
+    display: flex; /* 使用flex布局使子元素并排 */
+    gap: 20px; /* 两张图片之间的间距 */
+    margin: 20px 0; /* 上下外边距 */
+  }
+  .image-container img {
+    width: 400px; /* 保持图片宽度 */
+    height: 300px; /* 保持图片高度 */
+    object-fit: cover; /* 确保图片比例正确，避免拉伸变形 */
+  }
+  .scroll-code {
+  max-height: 300px;  /* 最大高度，超过则显示滚动条 */
+  overflow-y: auto;   /* 垂直方向溢出时显示滚动条 */
+  border: 1px solid #ddd;  /* 代码框边框 */
+  border-radius: 4px;      /* 圆角（可选） */
+  background: #f8f8f8;     /* 代码框背景色 */
+  padding: 10px;           /* 内边距，避免代码贴边 */
+}
+</style>
+
+<h2 id="1-Background"><a href="#1-Background" class="headerlink" title="1. Background:"></a>1. Background:</h2><p>As my academic coursework has become more advanced, I have come to realize that it enables me to more deeply appreciate the close connection between knowledge and practice. This realization has prompted me to continuously reflect on the value of engineering. While upgrading and re-evaluating the direction of the WindSense project, I recognized that the project was relatively personal and emotionally driven. Exploring how it could be transformed to serve a broader social function became something I was eager to pursue. Therefore, I discussed this with my mentor, who informed me that the technology behind WindSense could be applied to smart, energy-efficient advertising lightbox projects for the Shenzhen Metro and Guangzhou Metro that his laboratory is involved in.</p>
+<h2 id="2-Concept"><a href="#2-Concept" class="headerlink" title="2. Concept:"></a>2. Concept:</h2><p>In the past, the lighting of these lightboxes had non-adjustable brightness, which increased overall energy consumption. Now, using a technical architecture similar to WindSense, dimming commands can be transmitted to the lightbox lighting controllers via Bluetooth and 4G. Combined with passenger flow detectors in metro stations, the brightness of the lighting can be dynamically adjusted. This approach not only saves energy but also provides a more comfortable lighting environment based on passenger density.</p>
+<h2 id="3-Interactive-Wind-Simulation-System"><a href="#3-Interactive-Wind-Simulation-System" class="headerlink" title="3. Interactive Wind Simulation System"></a>3. Interactive Wind Simulation System</h2><h3 id="3-1-System-Design"><a href="#3-1-System-Design" class="headerlink" title="3.1 System Design"></a>3.1 System Design</h3><p><img src="/../images/2/image.png"></p>
+<h3 id="3-2-Hardware-Design"><a href="#3-2-Hardware-Design" class="headerlink" title="3.2 Hardware Design"></a>3.2 Hardware Design</h3><p><img src="/../images/2/image-1.png"></p>
+<h3 id="3-3-Software-Design"><a href="#3-3-Software-Design" class="headerlink" title="3.3 Software Design"></a>3.3 Software Design</h3><div class="scroll-code">
+
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;debug.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;uart.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;pwm.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;adc.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;mytime.h&quot;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;string.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;stdlib.h&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&quot;flash.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Defined at the top of the file</span></span><br><span class="line"><span class="type">static</span> <span class="type">const</span> <span class="type">char</span> json_daddr[] = <span class="string">&quot;\&quot;daddr\&quot;:&quot;</span>;</span><br><span class="line"><span class="type">static</span> <span class="type">const</span> <span class="type">char</span> json_data[] = <span class="string">&quot;\&quot;data\&quot;:&quot;</span>;</span><br><span class="line"><span class="type">static</span> FlashData_t flash_data = &#123;<span class="number">0</span>&#125;;  <span class="comment">// Global storage structure</span></span><br><span class="line"><span class="comment">/* Define the number of seconds in one week */</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ONE_DAY 86400UL  <span class="comment">// 24 * 3600</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> ONE_HOUR 3UL     <span class="comment">// 3600</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> PWM_TIME 3UL</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// Parse PWM control data from a JSON message</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">parse_mesh_pwm_data</span> <span class="params">(<span class="type">const</span> <span class="type">char</span> *json_str, u8 *pwm1, u8 *pwm2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Locate the data field（daddr is C000）</span></span><br><span class="line">    <span class="type">const</span> <span class="type">char</span> *d = <span class="built_in">strstr</span> (json_str, json_daddr);</span><br><span class="line">    <span class="keyword">if</span> (d &amp;&amp; d[<span class="number">8</span>] == <span class="string">&#x27;C&#x27;</span> &amp;&amp; d[<span class="number">9</span>] == <span class="string">&#x27;0&#x27;</span> &amp;&amp; d[<span class="number">10</span>] == <span class="string">&#x27;0&#x27;</span> &amp;&amp; d[<span class="number">11</span>] == <span class="string">&#x27;0&#x27;</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Locate the data field</span></span><br><span class="line">    <span class="type">const</span> <span class="type">char</span> *p = <span class="built_in">strstr</span> (json_str, json_data);</span><br><span class="line">    <span class="keyword">if</span> (!p)</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line">    p += <span class="number">7</span> + <span class="number">4</span>;  <span class="comment">// skip &quot;\&quot;data\&quot;:&quot;AABB</span></span><br><span class="line"></span><br><span class="line">    <span class="comment">// Parse two-byte hexadecimal values</span></span><br><span class="line">    u8 val1 = <span class="number">0</span>, val2 = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// PWM1</span></span><br><span class="line">    <span class="keyword">for</span> (u8 i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="type">char</span> c = p[i];</span><br><span class="line">        val1 &lt;&lt;= <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>)</span><br><span class="line">            val1 |= c - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;F&#x27;</span>)</span><br><span class="line">            val1 |= c - <span class="string">&#x27;A&#x27;</span> + <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;f&#x27;</span>)</span><br><span class="line">            val1 |= c - <span class="string">&#x27;a&#x27;</span> + <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// PWM2</span></span><br><span class="line">    p += <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">for</span> (u8 i = <span class="number">0</span>; i &lt; <span class="number">2</span>; i++) &#123;</span><br><span class="line">        <span class="type">char</span> c = p[i];</span><br><span class="line">        val2 &lt;&lt;= <span class="number">4</span>;</span><br><span class="line">        <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;0&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;9&#x27;</span>)</span><br><span class="line">            val2 |= c - <span class="string">&#x27;0&#x27;</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;A&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;F&#x27;</span>)</span><br><span class="line">            val2 |= c - <span class="string">&#x27;A&#x27;</span> + <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">if</span> (c &gt;= <span class="string">&#x27;a&#x27;</span> &amp;&amp; c &lt;= <span class="string">&#x27;f&#x27;</span>)</span><br><span class="line">            val2 |= c - <span class="string">&#x27;a&#x27;</span> + <span class="number">10</span>;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">            <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Limit the range</span></span><br><span class="line">    *pwm1 = (val1 &gt; <span class="number">100</span>) ? <span class="number">100</span> : val1;</span><br><span class="line">    *pwm2 = (val2 &gt; <span class="number">100</span>) ? <span class="number">100</span> : val2;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Save PWM to flash (called when PWM values change)</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">save_pwm_to_flash</span> <span class="params">(u8 pwm1, u8 pwm2)</span> </span>&#123;</span><br><span class="line">    flash_data.pwm1 = pwm1;</span><br><span class="line">    flash_data.pwm2 = pwm2;</span><br><span class="line">    <span class="built_in">flash_save_parameters</span> (&amp;flash_data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// Update battery capacity (Ah) to flash</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">update_ah_in_flash</span> <span class="params">(u32 ah1, u32 ah2)</span> </span>&#123;</span><br><span class="line">    flash_data.ah1 = ah1;</span><br><span class="line">    flash_data.ah2 = ah2;</span><br><span class="line">    <span class="built_in">flash_save_parameters</span> (&amp;flash_data);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// WiFi upload function (encapsulated upload logic) – updated to 7-parameter version</span></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">upload</span> <span class="params">(<span class="type">float</span> Vol, <span class="type">float</span> Pow1, <span class="type">float</span> Pow2, u8 *PWM1, u8 *PWM2, u32 AH1, u32 AH2, u32 ID)</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> cmd[<span class="number">70</span>];  <span class="comment">// Only used to store AT commands; no intermediate buffer needed</span></span><br><span class="line">    <span class="type">unsigned</span> <span class="type">char</span> data[<span class="number">20</span>];</span><br><span class="line">    <span class="type">int</span> idx = <span class="number">0</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Directly fill the byte array to avoid intermediate variables</span></span><br><span class="line">    <span class="type">unsigned</span> <span class="type">short</span> tmp;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1. Voltage value (0.0–48.0) – use 2 bytes, unit: 0.01 V</span></span><br><span class="line">    tmp = (<span class="type">unsigned</span> <span class="type">short</span>)(Vol * <span class="number">100.0</span>);</span><br><span class="line">    data[idx++] = tmp &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = tmp &amp; <span class="number">0xFF</span>;</span><br><span class="line">    <span class="comment">// 2. Power 1 (0.0–300.0) – use 2 bytes, unit: 0.1 W</span></span><br><span class="line">    tmp = (<span class="type">unsigned</span> <span class="type">short</span>)(Pow1 * <span class="number">10.0</span>);</span><br><span class="line">    data[idx++] = tmp &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = tmp &amp; <span class="number">0xFF</span>;</span><br><span class="line">    <span class="comment">// 3.  Power 2 (0.0–300.0) – use 2 bytes, unit: 0.1 W</span></span><br><span class="line">    tmp = (<span class="type">unsigned</span> <span class="type">short</span>)(Pow2 * <span class="number">10.0</span>);</span><br><span class="line">    data[idx++] = tmp &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = tmp &amp; <span class="number">0xFF</span>;</span><br><span class="line">    <span class="comment">// 4. PWM1 (0~100) - use 1 byte</span></span><br><span class="line">    data[idx++] = (*PWM1 &gt; <span class="number">100</span>) ? <span class="number">100</span> : *PWM1;</span><br><span class="line">    <span class="comment">// 5. PWM2 (0~100) - use 1 byte</span></span><br><span class="line">    data[idx++] = (*PWM2 &gt; <span class="number">100</span>) ? <span class="number">100</span> : *PWM2;</span><br><span class="line">    <span class="comment">// 6. Energy consumption 1 (0~4294967295) - use 4 byte</span></span><br><span class="line">    data[idx++] = AH1 &gt;&gt; <span class="number">24</span>;</span><br><span class="line">    data[idx++] = AH1 &gt;&gt; <span class="number">16</span>;</span><br><span class="line">    data[idx++] = AH1 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = AH1 &amp; <span class="number">0xFF</span>;</span><br><span class="line">    <span class="comment">// 7. Energy consumption 2 (0–4294967295) – use 4 bytes</span></span><br><span class="line">    data[idx++] = AH2 &gt;&gt; <span class="number">24</span>;</span><br><span class="line">    data[idx++] = AH2 &gt;&gt; <span class="number">16</span>;</span><br><span class="line">    data[idx++] = AH2 &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = AH2 &amp; <span class="number">0xFF</span>;</span><br><span class="line">    <span class="comment">// 8. ID (0–4294967295) – use 4 bytes</span></span><br><span class="line">    data[idx++] = ID &gt;&gt; <span class="number">24</span>;</span><br><span class="line">    data[idx++] = ID &gt;&gt; <span class="number">16</span>;</span><br><span class="line">    data[idx++] = ID &gt;&gt; <span class="number">8</span>;</span><br><span class="line">    data[idx++] = ID &amp; <span class="number">0xFF</span>;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Build the AT command directly to reduce sprintf calls</span></span><br><span class="line">    <span class="built_in">strcpy</span> (cmd, <span class="string">&quot;AT+TEST=C000,0282,&quot;</span>);</span><br><span class="line">    <span class="type">char</span> *p = cmd + <span class="built_in">strlen</span> (cmd);</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Manually convert to hexadecimal</span></span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; <span class="number">20</span>; i++) &#123;</span><br><span class="line">        u8 high = (data[i] &gt;&gt; <span class="number">4</span>) &amp; <span class="number">0x0F</span>;</span><br><span class="line">        u8 low = data[i] &amp; <span class="number">0x0F</span>;</span><br><span class="line">        *p++ = (high &lt; <span class="number">10</span>) ? (<span class="string">&#x27;0&#x27;</span> + high) : (<span class="string">&#x27;A&#x27;</span> + high - <span class="number">10</span>);</span><br><span class="line">        *p++ = (low &lt; <span class="number">10</span>) ? (<span class="string">&#x27;0&#x27;</span> + low) : (<span class="string">&#x27;A&#x27;</span> + low - <span class="number">10</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">strcpy</span> (p, <span class="string">&quot;\r\n&quot;</span>);</span><br><span class="line">    <span class="built_in">sendATCmd</span> ((u8 *)cmd, (u8 *)<span class="string">&quot;OK&quot;</span>, <span class="number">10000000</span>, <span class="literal">NULL</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">get_pwm</span> <span class="params">(u8 *pwm1, u8 *pwm2)</span> </span>&#123;</span><br><span class="line">    <span class="type">char</span> uart_buffer[<span class="number">256</span>] = &#123;<span class="number">0</span>&#125;;</span><br><span class="line">    <span class="comment">// Check whether there is data on the UART</span></span><br><span class="line">    <span class="type">uint16_t</span> available = <span class="built_in">uartAvailable</span>();</span><br><span class="line">    <span class="keyword">if</span> (available &gt; <span class="number">84</span>) &#123;</span><br><span class="line">        <span class="comment">// Read UART data</span></span><br><span class="line">        <span class="type">uint16_t</span> read_len = <span class="built_in">uartRead</span> (uart_buffer,</span><br><span class="line">                                      (available &lt; <span class="built_in">sizeof</span> (uart_buffer)) ? available : <span class="built_in">sizeof</span> (uart_buffer) - <span class="number">1</span>);</span><br><span class="line">        uart_buffer[read_len] = <span class="string">&#x27;\0&#x27;</span>;  <span class="comment">// Ensure string termination</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">// Check whether it contains a JSON message</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">strstr</span> (uart_buffer, json_data) != <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="built_in">parse_mesh_pwm_data</span> (uart_buffer, pwm1, pwm2);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span> <span class="params">(<span class="type">void</span>)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="built_in">SystemCoreClockUpdate</span>();</span><br><span class="line">    <span class="built_in">UARTx_DMA_init</span> (<span class="number">115200</span>);</span><br><span class="line">    <span class="built_in">time_init</span>();</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 1. Load data from flash</span></span><br><span class="line">    <span class="built_in">flash_read_ID</span> (&amp;flash_data);</span><br><span class="line">    u32 ID = flash_data.id;  <span class="comment">// Add ID variable</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">flash_load_parameters</span> (&amp;flash_data);</span><br><span class="line">    <span class="keyword">if</span> (flash_data.state != <span class="number">0x00</span>) &#123;</span><br><span class="line">        flash_data.id = <span class="number">0</span>;</span><br><span class="line">        flash_data.ah1 = <span class="number">0</span>;</span><br><span class="line">        flash_data.ah2 = <span class="number">0</span>;</span><br><span class="line">        flash_data.pwm1 = <span class="number">0</span>;</span><br><span class="line">        flash_data.pwm2 = <span class="number">0</span>;</span><br><span class="line">        flash_data.state = <span class="number">0</span>;</span><br><span class="line">        <span class="built_in">flash_save_parameters</span> (&amp;flash_data);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// 2. Initialize PWM (using values saved in flash)</span></span><br><span class="line">    <span class="built_in">fragrance_set_1</span> (flash_data.pwm1);</span><br><span class="line">    <span class="built_in">fragrance_set_2</span> (flash_data.pwm2);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">Delay_Ms</span> (<span class="number">1000</span>);</span><br><span class="line"></span><br><span class="line">    <span class="built_in">sendATCmd</span> ((u8 *)<span class="string">&quot;AT\r\n&quot;</span>, (u8 *)<span class="string">&quot;OK&quot;</span>, <span class="number">2000000</span>, <span class="literal">NULL</span>);</span><br><span class="line">    <span class="built_in">Delay_Ms</span> (<span class="number">1000</span>);</span><br><span class="line">    <span class="keyword">if</span> (<span class="built_in">sendATCmd</span> ((u8 *)<span class="string">&quot;AT+SETUP\r\n&quot;</span>, (u8 *)<span class="string">&quot;ERROR(-1)&quot;</span>, <span class="number">2000000</span>, <span class="literal">NULL</span>) == <span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">while</span> (<span class="built_in">sendATCmd</span> ((u8 *)<span class="string">&quot;AT+SETUP\r\n&quot;</span>, (u8 *)<span class="string">&quot;+STATE:1&quot;</span>, <span class="number">20000000</span>, <span class="literal">NULL</span>));</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">// Initialize using PWM values saved in flash</span></span><br><span class="line">    u8 PWM[<span class="number">2</span>] = &#123;flash_data.pwm1, flash_data.pwm2&#125;;</span><br><span class="line">    u8 LAST_PWM[<span class="number">2</span>] = &#123;flash_data.pwm1, flash_data.pwm2&#125;;</span><br><span class="line">    u32 AH[<span class="number">2</span>] = &#123;flash_data.ah1, flash_data.ah2&#125;;  <span class="comment">// Restore accumulated energy</span></span><br><span class="line"></span><br><span class="line">    <span class="built_in">ADC_DMA_CONF</span>();</span><br><span class="line">    <span class="type">float</span> Value[<span class="number">3</span>];               <span class="comment">// 0: voltage  1: current 1  2: current 2</span></span><br><span class="line">    <span class="type">uint32_t</span> timer = <span class="built_in">time_get</span>();  <span class="comment">// Get 10-second timer value</span></span><br><span class="line">    <span class="type">uint32_t</span> timer_up = <span class="number">0</span>;        <span class="comment">// Upload timer</span></span><br><span class="line">    <span class="type">uint32_t</span> timer_reset = <span class="number">0</span>;     <span class="comment">// Reset timer</span></span><br><span class="line">    <span class="type">uint32_t</span> timer_get = <span class="number">0</span>;       <span class="comment">// PWM update timer</span></span><br><span class="line">    </span><br><span class="line">    <span class="built_in">Delay_Ms</span> (<span class="number">1000</span>);</span><br><span class="line">    Value[<span class="number">0</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">0</span>);</span><br><span class="line">    Value[<span class="number">1</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">1</span>);</span><br><span class="line">    Value[<span class="number">2</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">2</span>);</span><br><span class="line">    <span class="built_in">upload</span> (Value[<span class="number">0</span>], Value[<span class="number">0</span>] * Value[<span class="number">1</span>], Value[<span class="number">0</span>] * Value[<span class="number">2</span>], &amp;PWM[<span class="number">0</span>], &amp;PWM[<span class="number">1</span>], AH[<span class="number">0</span>], AH[<span class="number">1</span>], ID);</span><br><span class="line"></span><br><span class="line">    <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">time_get</span>() - timer &gt;= <span class="number">1000000UL</span>) &#123;</span><br><span class="line">            timer = <span class="built_in">time_get</span>();</span><br><span class="line">            timer_up++;</span><br><span class="line">            timer_reset++;</span><br><span class="line">            timer_get++;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (timer_get &gt; PWM_TIME) &#123;</span><br><span class="line">            <span class="built_in">get_pwm</span> (&amp;PWM[<span class="number">0</span>], &amp;PWM[<span class="number">1</span>]);</span><br><span class="line">            <span class="keyword">if</span> (PWM[<span class="number">0</span>] != LAST_PWM[<span class="number">0</span>] || PWM[<span class="number">1</span>] != LAST_PWM[<span class="number">1</span>]) &#123;</span><br><span class="line">                <span class="built_in">fragrance_set_1</span> (PWM[<span class="number">0</span>]);</span><br><span class="line">                <span class="built_in">fragrance_set_2</span> (PWM[<span class="number">1</span>]);</span><br><span class="line">                LAST_PWM[<span class="number">0</span>] = PWM[<span class="number">0</span>];</span><br><span class="line">                LAST_PWM[<span class="number">1</span>] = PWM[<span class="number">1</span>];</span><br><span class="line">                <span class="built_in">save_pwm_to_flash</span> (PWM[<span class="number">0</span>], PWM[<span class="number">1</span>]);</span><br><span class="line"></span><br><span class="line">                Value[<span class="number">0</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">0</span>);</span><br><span class="line">                Value[<span class="number">1</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">1</span>);</span><br><span class="line">                Value[<span class="number">2</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">                <span class="built_in">upload</span> (Value[<span class="number">0</span>], Value[<span class="number">0</span>] * Value[<span class="number">1</span>], Value[<span class="number">0</span>] * Value[<span class="number">2</span>], &amp;PWM[<span class="number">0</span>], &amp;PWM[<span class="number">1</span>], AH[<span class="number">0</span>], AH[<span class="number">1</span>], ID);</span><br><span class="line">            &#125;</span><br><span class="line">            timer_get = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (timer_up &gt; ONE_HOUR) &#123;</span><br><span class="line"></span><br><span class="line">            Value[<span class="number">0</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">0</span>);</span><br><span class="line">            Value[<span class="number">1</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">1</span>);</span><br><span class="line">            Value[<span class="number">2</span>] = <span class="built_in">GET_ADC_DATE</span> (<span class="number">2</span>);</span><br><span class="line"></span><br><span class="line">            <span class="built_in">upload</span> (Value[<span class="number">0</span>], Value[<span class="number">0</span>] * Value[<span class="number">1</span>], Value[<span class="number">0</span>] * Value[<span class="number">2</span>], &amp;PWM[<span class="number">0</span>], &amp;PWM[<span class="number">1</span>], AH[<span class="number">0</span>], AH[<span class="number">1</span>], ID);</span><br><span class="line">            <span class="comment">// Update energy consumption calculation</span></span><br><span class="line">            AH[<span class="number">0</span>] += (u32)(Value[<span class="number">0</span>] * Value[<span class="number">1</span>] * ONE_HOUR);  <span class="comment">// Energy 1 = previous energy + voltage × current × time</span></span><br><span class="line">            AH[<span class="number">1</span>] += (u32)(Value[<span class="number">0</span>] * Value[<span class="number">2</span>] * ONE_HOUR);  <span class="comment">// Energy 2 = previous energy + voltage × current × time</span></span><br><span class="line">            <span class="keyword">if</span> (AH[<span class="number">0</span>] != flash_data.ah1 || AH[<span class="number">1</span>] != flash_data.ah2) </span><br><span class="line">            &#123;</span><br><span class="line">                <span class="built_in">update_ah_in_flash</span> (AH[<span class="number">0</span>], AH[<span class="number">1</span>]);</span><br><span class="line">            &#125;</span><br><span class="line">            </span><br><span class="line">            timer_up = <span class="number">0</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">if</span> (timer_reset &gt; ONE_DAY) &#123;</span><br><span class="line">            <span class="built_in">IWDG_WriteAccessCmd</span> (IWDG_WriteAccess_Enable);</span><br><span class="line">            <span class="built_in">IWDG_SetPrescaler</span> (IWDG_Prescaler_4);  <span class="comment">// Shortest prescaler</span></span><br><span class="line">            <span class="built_in">IWDG_SetReload</span> (<span class="number">0x0FFF</span>);               <span class="comment">// Maximum reload value, but will actually timeout immediately</span></span><br><span class="line">            <span class="built_in">IWDG_ReloadCounter</span>();                  <span class="comment">// Feed the watchdog first</span></span><br><span class="line">            <span class="built_in">IWDG_Enable</span>();                         <span class="comment">// Ensure the watchdog is enabled</span></span><br><span class="line">            <span class="comment">/* Wait for watchdog reset */</span></span><br><span class="line">            <span class="keyword">while</span> (<span class="number">1</span>) &#123;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</div>
+
+<h2 id="4-Assembly-Testing"><a href="#4-Assembly-Testing" class="headerlink" title="4. Assembly &amp; Testing"></a>4. Assembly &amp; Testing</h2><h3 id="4-1-Assembly-Process"><a href="#4-1-Assembly-Process" class="headerlink" title="4.1 Assembly Process"></a>4.1 Assembly Process</h3><p><img src="/../images/2/image-4.png"><br><img src="/../images/2/image-3.png"><br><img src="/../images/2/image-2.png"></p>
+<p>I have completed the development and testing of the controller prototype and delivered it to my mentor. He will finish producing 700 devices in January 2026 and install them in 700 lightboxes across 18 Shenzhen Metro stations. Since the controller integrates voltage and current measurement circuits, we are able to monitor real-time power consumption in the cloud and calculate the actual amount of energy saved.</p>
+<h3 id="4-2-Testing"><a href="#4-2-Testing" class="headerlink" title="4.2 Testing"></a>4.2 Testing</h3><p>During the development process, I designed a stable and reliable Bluetooth + 4G connectivity solution and built high-precision voltage and current measurement circuits. In addition, because the power supply systems of lightboxes vary across different stations, I designed a wide-range input voltage adaptation circuit for this lighting controller to ensure stable operation under multiple voltage conditions.</p>
+<h3 id="4-3-Conclusion"><a href="#4-3-Conclusion" class="headerlink" title="4.3 Conclusion"></a>4.3 Conclusion</h3><p>This is a project I am extremely proud of. I am currently reorganizing the technical report and plan to open-source it on GitHub, hoping it can inspire more similar projects.</p>
+<p>This experience deepened my understanding of how engineering can evolve from “personal expression” to “social function and systemic impact,” and it has strengthened my aspiration to be in an environment like Northwestern University’s The Garage, which supports innovation in practice. I hope to work on such a platform with teams dedicated to smart cities and sustainable solutions, advancing engineering projects from prototypes into initiatives with real societal impact.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2026/01/15/My-Second-post/" data-id="cuidi5kyqHoW16cVVA7uJ6U1b" data-title="Wireless Lightbox Controller" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2025/10/04/My-Frist-post/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">WindSense: An Interactive Device for Real-Time Wind Simulation</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2026/01/">January 2026</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/10/">October 2025</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2026/01/15/My-Second-post/">Wireless Lightbox Controller</a>
+          </li>
+        
+          <li>
+            <a href="/2025/10/04/My-Frist-post/">WindSense: An Interactive Device for Real-Time Wind Simulation</a>
+          </li>
+        
+          <li>
+            <a href="/2025/10/04/hello-world/">Hello World</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2026 John Doe<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
